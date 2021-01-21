@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS\rpsls.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+        <script src="JS\webcam.js"></script>
+        <script src="JS\rps-dataset.js"></script>
+    </head>
+
+    <body>
+        <div class="background">
+            <div class="blur_back">
+                <div class="title">
+                    <h1>IMAGify</h1>
+                    <p class="paragraph">An Image recoginition Platform</p>
+                </div>
+                <div class="video">
+                    <video
+                        autoplay
+                        playsinline
+                        muted
+                        id="wc"
+                        width="100%"
+                    ></video>
+                </div>
+                <div class="capture">
+                    <button
+                        type="button"
+                        class="btn"
+                        id="0"
+                        onclick="handleButton(this)"
+                    >
+                        object1
+                    </button>
+                    <button
+                        type="button"
+                        class="btn"
+                        id="1"
+                        onclick="handleButton(this)"
+                    >
+                        object2
+                    </button>
+                    <button
+                        type="button"
+                        class="btn"
+                        id="2"
+                        onclick="handleButton(this)"
+                    >
+                        object3
+                    </button>
+                    <button
+                        type="button"
+                        class="btn"
+                        id="3"
+                        onclick="handleButton(this)"
+                    >
+                        object4
+                    </button>
+                    <button
+                        type="button"
+                        class="btn"
+                        id="4"
+                        onclick="handleButton(this)"
+                    >
+                        object5
+                    </button>
+                </div>
+                <script src="JS\rpsls1.js"></script>
+                <div class="display">
+                    <div class="obj" id="Obj1">Obj1 Samples:</div>
+                    <div class="obj" id="Obj2">Obj2 Samples:</div>
+                    <div class="obj" id="Obj3">Obj3 Samples:</div>
+                    <div class="obj" id="Obj4">Obj4 Samples:</div>
+                    <div class="obj" id="Obj5">Obj5 Samples:</div>
+                </div>
+                <div class="result">
+                    <button type="button" id="train" onclick="doTraining()">
+                        Train
+                    </button>
+
+                    <button
+                        type="button"
+                        id="startPredicting"
+                        onclick="startPredicting()"
+                    >
+                        Start
+                    </button>
+                    <button
+                        type="button"
+                        id="stopPredicting"
+                        onclick="stopPredicting()"
+                    >
+                        Stop
+                    </button>
+                </div>
+                <div id="prediction"></div>
+            </div>
+        </div>
+        <script src="JS\script.js"></script>
+        <script src="JS\index_exercise.js"></script>
+    </body>
+</html>

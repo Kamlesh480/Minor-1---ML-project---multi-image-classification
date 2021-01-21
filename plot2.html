@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+        var fArray = [1,2];
+        var AllArrays = [];
+        AllArrays.push([2,3]);
+        //console.log("fArray: " + fArray)
+        console.log("AllArrays: " + AllArrays)
+
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Time', 'Accuracy', 'Loss'],
+                ['1', 100, 40],
+                ['2', 117, 46],
+                ['3', 66, 112],
+                ['4', 103, 54],
+                ['5', 100, 40]
+            ]);
+
+            var options = {
+                title: 'loss and accuracy plots for ML model',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+</body>
+
+</html>
+
