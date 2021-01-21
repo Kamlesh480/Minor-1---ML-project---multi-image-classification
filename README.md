@@ -1,0 +1,2 @@
+# Minor-1---ML-project---multi-image-classification
+IMAGify is a user -friendly website that takes name of objects from user,then user will be able to capture some pictures for those images and then train the machine learning model to recognize images and then use live webcam rendering in the chrome browser to recognize the object or image shown through Webcam. IMAGify uses the Convolutional Neural Networks (CNN) with MobileNet architecture for image recognition which is very light-weight and can run on browsers and even mobile devices.
