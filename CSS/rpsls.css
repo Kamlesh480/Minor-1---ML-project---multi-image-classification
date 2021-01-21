@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    /* border: 1px solid red; */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Space Mone", monospace;
+    box-sizing: border-box;
+    color: white;
+}
+
+.background {
+    position: relative;
+    /* background-color: #55b9f3; */
+    background-image: url("../IMG/img5.jpg");
+    width: auto;
+    height: 100%;
+    background-size: cover;
+}
+
+.blur_back {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 92%;
+    left: 4%;
+    right: 4%;
+    border-radius: 2rem;
+}
+
+.title {
+    text-align: center;
+    left: 38%;
+    background: linear-gradient(45deg, #f3ec78, #a74a64);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 6rem;
+}
+
+.title p {
+    text-align: center;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.video #wc {
+    width: 22.4rem;
+    height: 22.4rem;
+    border-radius: 2rem;
+    background-color: black;
+}
+
+.capture {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.capture .btn {
+    border-radius: 0.5rem;
+    height: 4.5rem;
+    margin: 2.5rem;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: white;
+    border: 0.2rem solid white;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    letter-spacing: 1.5;
+    box-shadow: 0.5rem 0.5rem rgba(255, 255, 255, 0.2);
+    transition: all 0.2s;
+}
+
+.capture .btn:hover {
+    box-shadow: 0 0;
+    transform: translateY(o.2rem);
+}
+
+.display {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.display .obj {
+    color: white;
+    margin: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid white;
+    letter-spacing: 1.2;
+}
+
+.result {
+    position: absolute;
+    bottom: 0.2%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.result button {
+    padding: 1rem 1.5rem;
+    margin: 2rem;
+    border-radius: 1.2rem;
+    text-transform: capitalize;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 1.5;
+}
+
+.result #train {
+    background-color: transparent;
+    border: 0.3rem solid blue;
+    color: blue;
+}
+
+.result #train:hover,
+#train:focus {
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+}
+
+.result #startPredicting {
+    background-color: transparent;
+    color: green;
+    border: 0.3rem solid green;
+}
+
+.result #startPredicting:hover,
+#startPredicting:focus {
+    background-color: green;
+    color: white;
+    font-weight: 700;
+}
+
+.result #stopPredicting {
+    background-color: transparent;
+    color: red;
+    border: 0.3rem solid red;
+}
+
+.result #stopPredicting:hover,
+#stopPredicting:focus {
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+#prediction {
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    right: 15%;
+    display: inline-block;
+    border-radius: 0.5rem;
+    height: 5rem;
+    bottom: 3%;
+    width: 10rem;
+    border: 0.2rem solid white;
+    font-weight: 700;
+    letter-spacing: 1.2;
+}
